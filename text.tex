@@ -3,12 +3,12 @@
 
 % A5: Printer friendly
 \documentclass[10pt, a5paper, twocolumn]{article}
-\usepackage[top=1.2cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
-\setlength{\columnsep}{1.2cm}
+\usepackage[vmargin={12mm,15mm}, hmargin=12mm]{geometry}
+\setlength{\columnsep}{12mm}
 
 % A7: Smartphone friendly
 %\documentclass[10pt]{article}
-%\usepackage[papersize={74mm,105mm}, top=0.1cm, bottom=0.15cm, left=0.7cm, right=0.5cm]{geometry}
+%\usepackage[papersize={74mm,105mm}, vmargin=1.5mm, hmargin={7mm,5mm}]{geometry}
 %\pagestyle{empty}
 
 %%% Typography, encoding & hyphenation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,9 +32,9 @@
 \pretitle{\vspace{-25pt}\RULE\par\vspace{5pt}\HUGE\color{DarkRed}\begin{center}}
 \posttitle{\end{center}\par\vspace{10pt}\RULE\\}
 \preauthor{\hfill\color{DarkRed}\scriptsize\LICENSE{0.35ex}\footnotesize$\;$}
-\postauthor{,}
-\predate{\color{DarkRed}\footnotesize\textit}
-\postdate{\,}
+\postauthor{}
+\predate{\color{DarkRed}\scriptsize\raisebox{0.15ex}{(}}
+\postdate{\raisebox{0.15ex}{)}\,}
 
 %%% Section titles & track rule %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -96,7 +96,7 @@
     \maketitle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \begin{dialogue}
-        \A Uff... casi no llegamos...
+        \A Uff... Casi no llegamos...
         \B Sí, ya podías haber mirado antes el número de andén...
         \A ¿Yo? ¡Si es por vosotras aún estamos en la otra punta!
         \E ¡Cabronas, anda que ayudáis con las maletas!
@@ -107,8 +107,8 @@
         \E Pues yo tampoco.
         \B ¡Pero si siempre las traes tú!
         \E Sí, pero hoy llevo la maleta grande y me las he dejado en la mochila.
-        \A ¿Y qué hacemos? Tengo el móvil sin batería... y yo sentada no me duermo.
-        \E No sé... Tú siempre estás diciendo que quieres jugar a rol con nosotras... podríamos echar una partida.
+        \A ¿Y qué hacemos? Tengo el móvil sin batería... Y yo sentada no me duermo.
+        \E No sé... Tú siempre estás diciendo que quieres jugar a rol con nosotras... Podríamos echar una partida.
         \A ¿Aquí? ¿Quieres decir?
         \B ¿No has traído cartas y te traes el manual?
         \E Algo así... ¿Tenéis suelto?
@@ -118,7 +118,7 @@
         \B Detenernos no sé, pero ahí viene el revisor y como no saquéis los billetes a lo mejor nos echa...
     \end{dialogue}
 
-    \section*{Creación de la partida} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section*{Creación de la partida} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \begin{dialogue}
         \E Bueno, esto ya se mueve, vamos al tajo ¿tenéis tres monedas?
@@ -140,7 +140,7 @@
         \E ¡Pero si nos enganchaste tú!
         \B Ya, pero el final... ese final no tiene perdón de Dios.
         \A Si queréis digo otra...
-        \E No, da igual, la primera idea es la que vale. Y si la \emph{señora guionista} es tan lista como dice, seguro que estará encantada de arreglar la serie.
+        \E No, no le hagas caso, la primera idea es la que vale. Si la \emph{señora guionista} es tan lista como dice, seguro que estará encantada de arreglar la serie.
         \B Peor no va a quedar...
         \E Además, no se trata de jugar con los personajes o la trama de la serie, se trata de que nos pongamos de acuerdo en la situación inicial y juguemos para ver que pasa.
         \B ¿Eso no era lo de \emph{Apocalypse Now}?
@@ -149,7 +149,7 @@
         \E No tiene por qué ser \emph{indie}... \emph{sandboxes} se han jugado toda la vida.
         \A Me estoy perdiendo.
         \E Sí, perdona, volvamos al tema. Perdidos sólo nos da un punto de partida y unas expectativas: gente atrapada en una isla desierta, sucesos paranormales, la \emph{Iniciativa Dharma}...
-        \A El humo negro, osos polares, números chungos...
+        \A El humo negro, los osos polares, los números chungos...
         \E Sí, también, pero no necesariamente todo a la vez. No se trata de repetir una parte de la serie...
         \B ¡Gracias a Dios!
         \E ...sino de coger esos ingredientes y crear una nueva historia con ellos.
@@ -163,7 +163,7 @@
         \A Umm... ¿Vamos en un avión y nos estrellamos en una isla desierta?
         \E \emph{Back to basics}, me gusta, pero vamos a darle una vuelta de tuerca... ¿Qué os parece esto? ``Un mes después de la desaparición del vuelo de \emph{Oceanic Airlines}, la policía da por muertos a todos los pasajeros, pero vosotras os negáis a darlos por \emph{perdidos}...''
         \B Finísimo ese juego de palabras.
-        \E ``...y decidís invertir todos vuestros ahorros en una misión de rescate. Tras semanas de sobrevolar la región en avioneta sin encontrar rastro alguno, una tormenta tropical amenaza con dar al traste con la búsqueda. Desesperadas porque se os está acabando el tiempo y el dinero, decidís arriesgar y salís a sobrevolar la última región que os quedaba por explorar. Lamentablemente, la tormenta os atrapa antes de que podáis regresar y un rayo deja frita la avioneta. Notáis una súbita ingravidez y veis al piloto luchar con los mandos mientras el copiloto intenta pedir ayuda por radio...''
+        \E ``...y decidís invertir todos vuestros ahorros en una misión de rescate. Tras semanas de sobrevolar la región en avioneta sin encontrar rastro alguno, una tormenta tropical amenaza con dar al traste con la búsqueda. Desesperadas porque se os está acabando el tiempo y el dinero, decidís arriesgar y salís a sobrevolar la última región que os quedaba por explorar. Lamentablemente, la tormenta os atrapa y un rayo deja frita la avioneta. Notáis una súbita ingravidez y veis al piloto luchar con los mandos mientras el copiloto intenta pedir ayuda por radio...''
         \B A mí me mola...
         \A A mí también, pero... ¿Te acabas de inventar todo eso?
         \E Sí, más o menos. Coges clichés del género, ideas sueltas, fragmentos de libros... lo mezclas todo y que sea lo que Dios quiera...
@@ -178,7 +178,7 @@
         \E Mientras no sea muy forzado, no. De hecho es útil. ¿Por qué crees que el prota de Perdidos es precisamente un médico?
         \A Ostras, no lo había pensado nunca...
         \B Esa es la gracia de jugar a rol. Yo a veces veo pelis y pienso: ese personaje acaba de fallar una tirada.
-        \E O cuando Gandalf saca un crítico y se carga al Balrog con el bastón...
+        \E O cuando Gandalf saca un crítico y se carga al Balrog...
         \A Si habláis raro no me entero.
         \E Tienes razón. Va, te toca, ¿quién eres y a quién estás buscando?
         \A ¿Yo no busco a Sara?
@@ -221,12 +221,12 @@
         \A Lo mismo.
     \end{dialogue}
 
-    \section*{Primera escena} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section*{Primera escena} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \begin{dialogue}
         \E Bueno, vamos al lío.
         \B Faltan las fichas de personaje ¿no?
-        \E No, no hacen falta, vamos a usar un sistema muy ligero. \textbf{Cuando toque hacer una tirada sólo hay que decidir si la cosa está 50$\!$\%---50$\!$\% o si el personaje tiene algún tipo de ventaja o desventaja}.
+        \E No hacen falta, vamos a usar un sistema muy ligero. \textbf{Cuando hagáis algo arriesgado, y toque hacer una tirada, sólo habrá que decidir si la cosa está 50$\!$\%---50$\!$\% o si el personaje tiene algún tipo de ventaja o desventaja}.
         \B ¿Y eso lo decides tú a ojo?
         \E En realidad no. \textbf{Si todas las demás estamos de acuerdo en que tu personaje tiene ventaja o desventaja, la tiene y no hay más que hablar}. \textbf{Si no nos ponemos de acuerdo, entonces se hace la tirada por defecto, que es la de 50$\!$\%---50$\!$\%}.
         \B ¿Y yo no pinto nada?
@@ -284,9 +284,9 @@
         \B En serio, te estás inventando las reglas sobre la marcha, ¿no?
         \E No, es un sistema para improvisar partidas que encontré por internet. Se llama \textbf{T3CS}.
         \B ¿\emph{Text}?
-        \E No, \textbf{T3CS}, las siglas de \emph{The 3 Coins System}, pero pronunciando el 3 como si fuese una ``E''.
+        \E No, \textbf{T3CS}, las siglas de \emph{\textbf{The 3 Coins System}}, pero pronunciando el 3 como si fuese una ``E''.
         \B Muy \emph{original} el nombre... No lo había oído nunca.
-        \E No es muy conocido, pero va bien cuando vas de viaje. Una vez lo jugué con chapas de cerveza en un bar.
+        \E No es muy conocido, pero va bien cuando viajas. Una vez lo jugué en un bar... ¡con chapas de cerveza!
         \A Hablando de jugar...
         \E Sí, venga, al tajo, tira dos monedas.
         \B Voy... una cara y una cruz.
@@ -295,7 +295,7 @@
         \E Sí, \textbf{quien lleva el personaje narra los éxitos totales y los fallos parciales y quien dirige narra los éxitos parciales y los fallos totales}.
         \B Estos juegos \emph{modehnoh}... ¿Y puedo narrar cualquier cosa?
         \E Si te lo paras a pensar, es la manera natural de repartirlo... Y sí, puedes narrar lo que quieras, siempre que se pueda considerar un fallo parcial y sea coherente con lo que se ha dicho hasta ahora.
-        \B Ok, a ver qué te parece esto: Salto del avión y pero fallo a la hora de agarrarme al tronco del árbol en plan bombero porque el chaleco está inflado y me hace rebotar. Caigo dándome de hostias con las ramas, pero el chaleco y el petate amortiguan un poco la caída y no me hago mucho daño.
+        \B Ok, a ver qué te parece esto: Salto del avión y fallo a la hora de agarrarme al tronco del árbol en plan bombero porque el chaleco está inflado y me hace rebotar. Caigo dándome de hostias con las ramas, pero el chaleco y el petate amortiguan un poco la caída y no me hago mucho daño.
         \E Si te haces un esguince o te cargas uno de los maletines, te lo compro.
         \B Uff... venga, se rompe el de las bengalas durante la caída.
         \E Ok, sigues teniendo las bengalas, pero la pistola se ha roto y no tienes manera de lanzarlas. Tu \emph{salto ninja} ha desestabilizado el fuselaje, que cada vez se balancea más. ¿Qué haces?
@@ -327,7 +327,7 @@
         \E Vale, ahora vuelvo.
     \end{dialogue}
 
-    \section*{Segunda escena} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section*{Segunda escena} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \begin{dialogue}
         \E ¿Por dónde íbamos?
@@ -378,7 +378,7 @@
         \B Pues cojo la chapa y nos ponemos en marcha a las lianas.
         \E Al salir de la avioneta te parece ver algo a lo lejos. Un parpadeo.
         \B ¿Un animal?
-        \E No estás seguro porque lo has visto de refilón, pero no, no parecía un animal. Dirías que era un destello y provenía de una montaña no muy alta que hay en dirección norte.
+        \E No estás seguro porque lo has visto de refilón, pero no, no parecía un animal. Dirías que era un destello y provenía de una montaña no muy alta que hay en dirección noroeste.
         \B ¿Un faro? ¿Un rayo? ¿Fuego?
         \E No lo sabes. Ahora no ves nada.
         \A ¿Yo veo algo?
@@ -386,12 +386,12 @@
         \B Nos quedamos un rato mirando en aquella dirección.
         \E Hacedme una tirada a ver si conseguís volverlo a ver. Como lo estáis buscando, os dejo tirar con ventaja.
         \B ¿Tiramos las dos?
-        \E No, una tirada en total, parte de la ventaja es que mirais a la vez.
+        \E No, una tirada en total, parte de la ventaja es que miráis a la vez.
         \A Tiro yo, que aún no he tirado. Dos monedas, ¿verdad?
         \E Sí.
         \A Pues... ¡dos caras!
         \B A partir de ahora tiras siempre tú.
-        \E Teneis un total de \textbf{tres caras, que és un éxito total}, y en teoría deberíais narrar vosotras, pero como no sabéis lo que estáis mirando, si os parece, narro yo.
+        \E Tenéis \textbf{tres caras, que es un éxito total}, y en teoría deberíais narrar vosotras, pero como no sabéis lo que estáis mirando, si os parece, narro yo.
         \A ¡Cuenta, cuenta!
         \E Pues... después de un buen rato lo veis otra vez, esta vez con mucha más claridad. Es un destello muy breve y por la posición del Sol deducís que debe ser un rayo de luz reflejado en alguna superficie muy pulida. Está justo encima de un saliente de roca de la montaña, así que no os costará localizarlo de nuevo en el futuro.
         \A Quizá sea un edificio o algo.
@@ -430,19 +430,19 @@
         \A ¡Mooola!
         \E ...pero hay un detalle más: Cuando te ve introducir el código, Mike también reconoce esas cifras... ¡Es la fecha de nacimiento de Sara!
         \B ¡Vamos que nos vamos!
-        \E ¿Entrais?
+        \E ¿Entráis?
         \A ¡No, si te parece nos quedamos fuera!
         \E Vale, pero necesito un respiro para coger ideas. Voy a estirar las piernas y a pensarme cómo seguimos.
         \B Ok, aquí te esperamos.
         \A ¡No tardes!
     \end{dialogue}
 
-    \section*{Tercera escena} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section*{Tercera escena} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \begin{dialogue}
         \E Volvemos al tema, que creo que ya sé por donde tirar. Ibais a entrar, ¿no?
         \B Sí. Voy delante y llevo el escudo listo.
-        \E Entrais a un pasillo y unos sensores de movimiento van activando los flourescentes conforme avanzais. Llegais a unas escaleras que suben y no hay más opciones, así que subís los dos primeros tramos. Allí encontrais una puerta. Podéis entrar o podéis seguir subiendo por las escaleras.
+        \E Entráis a un pasillo y unos sensores de movimiento van activando los fluorescentes conforme avanzáis. Llegáis a unas escaleras que suben y no hay más opciones, así que subís los dos primeros tramos. Allí encontráis una puerta. Podéis entrar o podéis seguir subiendo por las escaleras.
         \B ¿La puerta está abierta?
         \E Está cerrada, pero no tiene ningún tipo de cerradura. ¿La abres?
         \A ¿Hay algún cartel?
@@ -453,29 +453,73 @@
         \E Aprende rápido la \emph{munchkin} esta...
         \B Ya te digo...
         \A ¿Eso es un sí?
-        \E Sí, no tenía previsto hacer un \emph{crossover} con \emph{The Americans}, pero la verdad es que lo de tus abuelos rusos me ha molado. Digamos que sabes ruso pero lo tienes bastante oxidado porque tu madre murió en el parto y has tenido menos contacto con esa mitad de la família.
+        \E Sí, no tenía previsto hacer un \emph{crossover} con \emph{The Americans}, pero la verdad es que lo de tus abuelos rusos me ha molado. Digamos que sabes ruso pero lo tienes oxidado porque tu madre murió en el parto y has tenido menos contacto con esa mitad de la familia.
         \A ¡Vale!
         \B ¿Qué pone en los carteles?
         \E Pues te cuesta un poco, pero deduces que dicen: \emph{salida}, el que va hacia abajo; \emph{almacén}, la puerta que tenéis delante; y \emph{dormitorios}, \emph{comedor} y \emph{sala de control}, el que va hacia arriba.
         \B ¿Se oye algún ruido?
         \E Está todo en silencio como si no hubiese nadie.
-        \B Será mejor que subamos directamente a la sala de control. A lo mejor hay alguna radio.
-        \A ¿No deberíamos ir mirando planta por planta?
-        \B Estamos en una isla tropical en la que hay una base excabada en la montaña con letreros en ruso. O es una instalación muy vieja, y está avandonada, o es una instalación muy secreta, y no les va a hacer gracia vernos. En cualquier caso prefiero no encontrarme a nadie.
+        \B Subamos directamente a la sala de control. A lo mejor hay alguna radio.
+        \A ¿No deberíamos ir planta a planta?
+        \B Estamos en una isla tropical en la que hay una base excavada en la montaña con letreros en ruso. O es una instalación muy vieja, y está abandonada, o es una instalación muy secreta, y no les va a hacer gracia vernos. En cualquier caso, prefiero ir rapidito.
         \A Visto así...
-        \E Vais subiendo y encontrais tres plantas más: los dormitorios, el comedor y la sala de control. ¿Entrais?
+        \E Vais subiendo y encontráis los dormitorios, el comedor y, finalmente, la sala de control. ¿Entráis?
         \B Abro la puerta un poco, ¿veo algo?
         \E Al abrir la puerta se encienden los fluorescentes de esa planta.
         \A Eso es que no hay nadie, ¿no?
-        \E Veis un pasillo con varias puertas con letreritos. Parecen despachos.
-        \B
-        %
-        %
-        %
-        \E ¿Os parece que lo dejemos aquí?
-        \A ¿Ahora? ¡Pero si acabamos de abrir la puerta! ¡Yo quiero saber cómo acaba todo esto!
-        \E Precisamente. Siempre es bueno dejar la sesión en un \emph{cliffhanger} para que no dé pereza volver a ponernos el próximo día. ¿Te ha gustado tu primera partida?
-        \A ¡Mucho! ¿Podemos seguir a la vuelta?
+        \E Todo está en total silencio. Veis un pasillo con varias puertas con letreritos. Parecen despachos. ¿Qué hacéis?
+        \B Me quedo montando guardia en la escalera mientras ella investiga.
+        \E Perfecto. ¿Tú qué haces?.
+        \A Entro y voy leyendo los letreros.
+        \E Te cuesta un poco, pero, como no hay más prisa no te hago tirar. En las puertas pone archivo, director y sala de control. ¿Entras en alguna?
+        \A Miro en el archivo.
+        \E Entras y hay la típica mesa de escritorio, pero está llena de polvo como si hiciese años que nadie la usa. También hay unos cuantos archivadores etiquetados con lo que parecen apellidos rusos ordenados alfabéticamente. ¿Qué haces?
+        \A Voy al despacho del director.
+        \E Se trata de un despacho con un escritorio de madera algo más bonito y un par de sillas de oficina bien tapizadas. En las paredes hay fotografías enmarcadas y una bandera soviética.
+        \A Miro las fotografías.
+        \E En ellas ves que aparece siempre un mismo hombre y deduces que era el director de la instalación. La mayoría son fotografías de ese hombre con generales del ejército soviético, pero también hay una foto de grupo. En ella aparecen científicos con bata blanca y media docena de mujeres embarazadas. Están al aire libre y todos sonríen de manera distendida. Hazme una tirada con ventaja.
+        \A Voy... \textbf{¡Dos caras y una cruz!}
+        \E Vale, \textbf{un éxito parcial}, pues no acabas de tener claro porqué, pero una de esas mujeres te llama la atención... Es como si ya la hubieses visto antes en alguna parte.
+        \A ¿Cómo si fuese famosa?
+        \E No sabrías decir.
+        \A Vale, tengo una corazonada. Vuelvo al archivo y busco el apellido de mi abuela materna en el archivador.
+        \E Encuentras una carpeta con el apellido de tu abuela materna. Lo abres y descubres un expediente con su nombre y una foto de cuando era joven. Es la mujer que has visto antes.
+        \B \emph{Oh, my fucking god!}
+        \E No captas todos los detalles, pero parece que participó de voluntaria en un proyecto científico antes de emigrar a los Estados Unidos. Por lo que puedes leer, era algo relacionado con un embarazo y todo iba razonablemente bien, pero el expediente termina abruptamente con una frase bastante críptica: ``Experimento no finalizado. Se recomienda neutralizar''.
+        \A ¿Nada más?
+        \E Nada que puedas entender.
+        \A Miro los otros expedientes.
+        \E Todos se parecen mucho, pero la mayoría acaban con una frase diferente: ``Experimento neutralizado''.
+        \A Llamo a Mike y le explico todo.
+        \B Lo flipo a saco y le digo que esto tiene muy mala pinta y que hay que salir de aquí. Vamos a la sala de control a ver si encontramos una radio.
+        \E Ok, entráis en la sala de control y hay un montón de pantallas y aparatos. También hay un gran ventanal que domina la isla. Todo está cubierto de polvo, pero trasteáis un poco y conseguís encender dos pantallas. En la más grande aparece un archipiélago de islas. Cada isla tiene un código. En la isla que está más al sur, es de color azul. En las otras es de color rojo y, en la que está más al este, parpadea.
+        \B Quizá sea donde estamos nosotros.
+        \A ¿La azul o la que parpadea?
+        \E La otra pantalla es la típica línea de comandos y tenéis un teclado, en cirílico, con el que introducir órdenes. Ahora mismo sólo aparece la palabra ``mapa''  en esa pantalla.
+        \A Tecleo el código que está en azul.
+        \E Te aparece un menú con las palabras ``ver'', ``contactar'' y ``mapa''.
+        \A Escribo ``ver''.
+        \E En la pantalla grande aparece la típica imagen de cámara de seguridad. Cada 10 segundos cambia la escena.
+        \B ¿Reconocemos algo? ¿Se ve el avión?
+        \E No, no parece vuestra isla.
+        \A Escribo el código de la que parpadeaba y la palabra ``ver''.
+        \E Veis más imágenes de cámaras de seguridad y reconocéis algunos de los pasillos por los que habéis pasado.
+        \A Pues ya sabemos cual es cual... Vuelvo a teclear el código azul.
+        \E Vuelven a aparecer imágenes de la isla sur. Las instalaciones allí parecen estar en mejor estado. A veces veis personas en algunas de esas imágenes. Llevan batas blancas y parecen estar trabajando con normalidad.
+        \B Pues no han cerrado del todo...
+        \E El carrusel de imágenes continua y enfoca un pasillo con celdas. De una de ellas sobresalen unos brazos y, un segundo antes de que la imagen vuelva a cambiar, podéis ver la cara de Robert sobresaliendo entre los barrotes y gritando algo hacia el pasillo.
+        \A ¡Mierda! ¿Puedo volver atrás?
+        \E Tira con desventaja por los nervios.
+        \A Vale, tiro... \textbf{¡tres cruces!}
+        \B Retiro lo de que tires siempre tú.
+        \E Pues con ese \textbf{fallo total} en vez de volver a la imagen anterior lo que consigues es bloquear el sistema. La pantalla te pide una contraseña y aparece una cuenta atrás de 30 segundos.
+        \B Tiro de ella y salimos cagando leches.
+        \E Bajáis a toda hostia por las escaleras. Pasados los primeros 30 segundos, empieza a sonar una alarma y suena una voz que anuncia alguna cosa y da una cuenta atrás en ruso. Hacedme una tirada conjunta para ver si salís a tiempo. Con ventaja porque habéis empezado a correr antes de tiempo.
+        \B Voy... \textbf{dos caras y una cruz.}
+        \E \textbf{Éxito parcial}... Salís del edificio justo antes de que la puerta exterior se selle, pero os habéis dejado el petate y el expediente de tu abuela dentro. A partir de ahora vais con lo puesto. ¿Os parece que lo dejemos aquí?
+        \A ¿Ahora? ¡Yo quiero saber cómo acaba todo esto!
+        \E Precisamente. Siempre es bueno dejar la sesión en un \emph{cliffhanger} para que no dé pereza volver a ponernos.
+        \A Si tú lo dices...
     \end{dialogue}
 
     \section*{Epílogo} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -483,22 +527,17 @@
     \begin{dialogue}
         \E Bueno... ¿Qué os ha parecido?
         \B Me lo esperaba peor. Eso de jugarse las cosas a cara o cruz...
-        \E Tú es que eres muy de BRP y D20, pero buena parte del \emph{crunch} de esos sistemas es ilusorio. Al final sólo hay cuatro resultados posibles: lo petas, lo consigues justito, fallas por poco o la cagas bien. Si hubiesemos jugado con otro sistema... ¿crees que la partida hubiese salido muy diferente?
+        \E Tú es que eres muy de BRP y D20, pero buena parte del \emph{crunch} de esos sistemas es ilusorio. Al final sólo hay cuatro resultados posibles: lo petas, lo consigues justito, fallas por poco o la cagas bien. Si hubiésemos jugado con otro sistema... ¿crees que la partida hubiese salido muy diferente?
         \B Supongo que no, al final eres tú la que ajusta las dificultades y tal... ¡pero las monedas ruedan menos que los malditos D4s!
-        \E Ya, en casa lo juego con unos D6s educativos de sumas y restas.
-        \B ¿Rollo dados Fate?
-        \E Sí, pero sin caras en blanco, tres positivos y tres negativos. De todas maneras, va muy bien poder improvisarlo con monedas o lo que tengas a mano: Una vez le monté a mi sobrina una partida de iniciación y jugamos con conchas que habíamos recogido.
-        \B Que hippy todo... y tu hermano sin sospechar que la estabas trayendo al \emph{lado oscuro}...
-        \E Y, hablando de iniciación, ¿tú cómo lo has visto?
-        \A A mi me ha parecido muy sencillo, pero es que yo no tengo ni idea y me iba dejando llevar. Al principio no me enteraba mucho, pero luego le he ido cogiendo el tranquillo...
-        \E Los juegos de rol se aprenden jugando.
-        \B O viendo jugar. Yo he aprendido algún sistema leyendo \emph{actual plays}.
-        \E Sí, pero porque tú ya sabes jugar.
-        \A Y... ¿Haremos otra partida?
+        \E Ya, en casa lo juego con unos D6s educativos de sumas y restas. De todas maneras, va muy bien poder improvisarlo con monedas o lo que tengas a mano: Una vez le monté a mi sobrina una partida de iniciación en la playa y jugamos con conchas marinas.
+        \B ¡Qué \emph{hippie}!
+        \E ¿Y tú cómo lo has visto?
+        \A A mi me ha parecido muy sencillo, pero es que yo no tengo ni idea y me iba dejando llevar. Al principio no me enteraba mucho, pero luego le he ido cogiendo el tranquillo...  ¿Haremos otra partida?
         \E Tenemos todo el viaje de vuelta.
         \A ¡Pero queda mucho!
-        \B La conversión se ha completado, tu alma nos pertenece, tu destino está ligado al gran \emph{Nyarlathotep}...
-        \E No le hagas caso, podemos ir haciendo escenas sueltas cada vez que tengamos un rato suelto. Entre que no hay fichas de personaje y que usamos tres monedas, podemos jugar en el restaurante sin que nos miren raro.
+        \B La conversión se ha completado, ¡su alma nos pertenece!
+        \E No le hagas caso, podemos ir haciendo escenas sueltas cada vez que tengamos un rato muerto. Entre que no hay fichas de personaje y que usamos tres monedas, podemos jugar mientras esperamos la comida en los restaurantes o mientras hacemos cola para entrar en cualquier sitio.
+        \A ¡Vale!
     \end{dialogue}
 
 \end{document}
